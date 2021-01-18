@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/lihoang/anaconda3/envs/CRABI/bin/python"
+    "python.pythonPath": "/home/lihoang/anaconda3/envs/CRABI/bin/python",
+    "git.ignoreLimitWarning": true
 }

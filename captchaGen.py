@@ -46,7 +46,7 @@ for c in charsInCaptcha:
 
 # Gen data
 imgStore = ImageCaptcha(width=inputShape[1], height=inputShape[0])
-for i in range(100):
+for i in range(5000):
     chars = random.sample(charsInCaptcha, k=4)
     content = ''.join(chars)
 
@@ -56,8 +56,6 @@ for i in range(100):
 
     for idx, c in enumerate(chars):
         captc = np.hstack((ABIs[idx], img))
-        cv2.imshow("Image", img)
-        cv2.imshow("captc", captc)
-        f = os.path.join(f_data, str(c), "{}.png".format(i))
+        f = os.path.join(f_data, str(c), "{}{}.png".format(content, i))
         cv2.imwrite(f, captc)
         logger.info(f)

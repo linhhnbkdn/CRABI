@@ -62,7 +62,3 @@ class CRABI_CNN:
 
         model.summary()
         return model
-
-
-
-model = CRABI_CNN.build(96, 320, 3, 62)
