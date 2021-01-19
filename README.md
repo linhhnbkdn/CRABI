@@ -7,7 +7,9 @@
 # Model: "sequential"
 
 >Total params: 6,317,509
+
 >Trainable params: 6,317,509
+
 >Non-trainable params: 0
 
 # Validation dataset result:
