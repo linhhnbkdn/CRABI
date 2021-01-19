@@ -1,14 +1,17 @@
 # CRABI
-CAPTCHA Recognition with Attached Binary Images
+# CAPTCHA Recognition with Attached Binary Images
 
-Author: HOANG NGOC LINH
-Email: linhhn.bkdn@gmail.com
-Phone: +84 344 965 661
+==================================
+# Author: HOANG NGOC LINH
+# Email: linhhn.bkdn@gmail.com
+# Phone: +84 344 965 661
+==================================
 
-Model: "sequential"
+
+# Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #
-=================================================================
+_________________________________________________________________
 conv2d (Conv2D)              (None, 320, 96, 32)       320
 _________________________________________________________________
 max_pooling2d (MaxPooling2D) (None, 160, 48, 32)       0
@@ -60,15 +63,12 @@ _________________________________________________________________
 dense (Dense)                (None, 5)                 76805
 _________________________________________________________________
 activation (Activation)      (None, 5)                 0
-=================================================================
+_________________________________________________________________
 Total params: 6,317,509
 Trainable params: 6,317,509
 Non-trainable params: 0
 
-Validation dataset result:
-
-Result:
-
+# Validation dataset result:
 Epoch 88/200
 419/419 [==============================] - 51s 120ms/step - loss: 0.0157 - accuracy: 0.9948 - val_loss: 1.8523 - val_accuracy: 0.7045
 
